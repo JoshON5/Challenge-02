@@ -96,6 +96,7 @@ h3 {
 .projects-header {
     width: 310px;
     margin-top: 1rem;
+    
 }
 
 .projects {
@@ -124,7 +125,6 @@ h3 {
 .grid-image {
   height: calc(100% - 55.8rem);
   width: 50%;
-  max-width: 1280px;
   object-fit: cover;
   margin: 0 auto 2rem auto;
   border-radius: 15px 15px 0 0;
@@ -147,13 +147,16 @@ h3 {
 }
 .project-cap {
     display: flex;
+    font-size: 1.3rem;
     flex: 4;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--cards);
-    color: var(--container)
-      
+    color: var(--container);
+    margin: -4rem 0 4rem 9.5rem;
+    position: relative;
+    width: 19.2rem;
   }
 .grid-emojis {
   display: none;
@@ -172,6 +175,7 @@ h3 {
     width:80%;
     overflow: clip;
     place-items: center;
+    resize: both;
   }
   .about-me {
     display: block;
@@ -183,14 +187,14 @@ h3 {
     grid-area: main1;
     margin: 2rem 0 0 2.5rem;
     text-indent: 6rem;
-    width: 25rem;
+    width: 35rem;
   }
   
   .about-2 {
     grid-area: main2;
     margin: 2rem 0 0 2.5rem;
     text-indent: 6rem;
-    width: 25rem;
+    width: 35rem;
   }
   h3 {
     border-bottom: 10px solid var(--navbar);
@@ -199,6 +203,7 @@ h3 {
   .projects-header {
     border-right: none;
     border-bottom: 10px solid var(--navbar);
+    width: 100%;
   }
   .projects {
     display: block;
@@ -207,4 +212,13 @@ h3 {
   #first-image {
     width: 30rem;
   }
+  .first-cap {
+    width: 90%;
+    margin-left: 1.7rem;
+  }
+  .project-cap {
+    width: 17rem;
+    margin: -4rem 0 4rem 8.2rem;
+  }
+  
 }

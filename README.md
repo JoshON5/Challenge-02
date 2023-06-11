@@ -7,11 +7,11 @@ This application was created with the intention of showcasing a portfolio that i
 Using grids to create sidebars to match the mockup and also creating a hover effect was added into the application. variables were used in the root to help streamline a color scheme if there was alternative scheme found without having to look for the line of code for each instance of that color. 
 
 ## Visual
-<img src="">
-<img src="">
-<img src="">
+<img src="develop/Screenshot 2023-06-11 at 5.43.46 PM.png">
+<img src="develop/Screenshot 2023-06-11 at 5.44.01 PM.png">
+<img src="develop/Screenshot 2023-06-11 at 5.44.06 PM.png">
 
 ## Authors
-Joshua Nichols
-code referenced from CSS-Tricks https://css-tricks.com/snippets/css/complete-guide-grid/
+Joshua Nichols |
+code referenced from CSS-Tricks https://css-tricks.com/snippets/css/complete-guide-grid/ |
 code referenced from freeCodeCamp https://www.freecodecamp.org/learn/2022/responsive-web-design/

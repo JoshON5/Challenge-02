@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
 }
+/*Var is used here to easily change the color scheme in the future*/
 :root {
   --navbar: #e56b6f;
   --text: #ffe8d6;
@@ -30,7 +31,7 @@ body {
 h2 {
   align-self: center;
 }
-
+/*used flex on the navbar to move it the nav info to the right and my name to the left with space-between*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,7 @@ ul {
   display: block;
   width: 100%;
 }
+/*used grid here to create the sidebar and the columns would auto generate if I added more content and fill in the extra space with fr for the other columns*/
 .about-me {
   font-family: "Times New Roman", Times, serif;
   display: grid;
@@ -71,7 +73,7 @@ ul {
     "sidebar . . ."
     "sidebar main2 main2 main2";
 }
-
+/*put a flex in the grid cell to align the content to the top center and give it that border line that is in the mock-up*/
 h3 {
   grid-area: sidebar;
   display: flex;
@@ -94,9 +96,9 @@ h3 {
   width: 42rem;
 }
 .projects-header {
-    width: 310px;
+    width: 20.18rem;
     margin-top: 1rem;
-    
+    align-items: baseline;
 }
 
 .projects {
@@ -104,9 +106,7 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
   text-align: center;
   color: var(--text);
   grid-template-areas:
@@ -154,7 +154,7 @@ h3 {
     justify-content: center;
     background-color: var(--cards);
     color: var(--container);
-    margin: -4rem 0 4rem 9.5rem;
+    margin: -4rem 0 2rem 9.5rem;
     position: relative;
     width: 19.2rem;
   }
@@ -164,8 +164,46 @@ h3 {
 .project-cap:hover .grid-emojis {
   display: inline;
 }
+.first-cap:hover .grid-emojis {
+  display: inline;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background: var(--container);
+}
+.contact-header {
+  margin: 1rem 0 0 12.125rem;
+  padding: 0 0 8rem 0;
+  border-right: 10px solid var(--placeholder);
+}
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  color: var(--placeholder);
+}
 
+.contact-btn {
+  color: var(--placeholder);
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-btn:hover {
+  transform: translateY(8px);
+}
+
+/*Media query is used here to adjust the look of the site when it's on a screen that is 768 or smaller so it would read all in a column*/
 @media screen and (max-width: 768px) {
     .header {
         width: 80%;
@@ -220,5 +258,15 @@ h3 {
     width: 17rem;
     margin: -4rem 0 4rem 8.2rem;
   }
+.contact {
+  display: block;
+}
+.contact-header {
+  margin: 0;
+  padding: 0;
+  border-right: 0px transparent;
+  border-bottom: 10px solid var(--hover)
+}
+
   
 }

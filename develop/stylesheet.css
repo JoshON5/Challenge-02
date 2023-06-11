@@ -28,6 +28,10 @@ body {
   width: 80%;
   padding: 5rem 0 0 0;
 }
+.profile-picture {
+  border-radius: 50%;
+  width: 4rem;
+}
 h2 {
   align-self: center;
 }
@@ -55,6 +59,7 @@ h2 {
 ul {
   list-style: none;
 }
+
 .header {
   text-align: center;
   display: block;
@@ -207,6 +212,9 @@ h3 {
 @media screen and (max-width: 768px) {
     .header {
         width: 80%;
+    }
+    h2 {
+      display: none;
     }
   .navbar {
     justify-content: center;

@@ -101,9 +101,9 @@ h3 {
   width: 42rem;
 }
 .projects-header {
-    width: 20.18rem;
-    margin-top: 1rem;
-    align-items: baseline;
+  width: 19.375rem;
+  margin-top: 1rem;
+  align-items: baseline;
 }
 
 .projects {
@@ -137,32 +137,32 @@ h3 {
 }
 
 #first-image {
-    margin-top: 4rem;
-    width: 38rem;
+  margin-top: 4rem;
+  width: 38rem;
 }
 .first-cap {
-    font-size: 2rem;
-    padding: 0;
-    color: var(--text);
-    background-color: var(--cards);
-    margin: -3.5rem 0 8rem 0;
-    box-shadow: 2px 1px 5px var(--cards);
-    position: relative;
-    width: 100%;
+  font-size: 2rem;
+  padding: 0;
+  color: var(--text);
+  background-color: var(--cards);
+  margin: -3.5rem 0 8rem 0;
+  box-shadow: 2px 1px 5px var(--cards);
+  position: relative;
+  width: 100%;
 }
 .project-cap {
-    display: flex;
-    font-size: 1.3rem;
-    flex: 4;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--cards);
-    color: var(--container);
-    margin: -4rem 0 2rem 9.5rem;
-    position: relative;
-    width: 19.2rem;
-  }
+  display: flex;
+  font-size: 1.3rem;
+  flex: 4;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--cards);
+  color: var(--container);
+  margin: -4rem 0 2rem 9.5rem;
+  position: relative;
+  width: 19.2rem;
+}
 .grid-emojis {
   display: none;
 }
@@ -181,7 +181,7 @@ h3 {
   background: var(--container);
 }
 .contact-header {
-  margin: 1rem 0 0 12.125rem;
+  margin: 1rem 0 0 13.813rem;
   padding: 0 0 8rem 0;
   border-right: 10px solid var(--placeholder);
 }
@@ -200,25 +200,25 @@ h3 {
   padding: 1rem 2rem;
   border-radius: 2px;
   font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
+  text-shadow: 2px 2px 1px var(--hover);
   transition: transform 0.3s ease-out;
 }
 
 .contact-btn:hover {
-  transform: translateY(8px);
+  transform: translateY(5px);
 }
 
 /*Media query is used here to adjust the look of the site when it's on a screen that is 768 or smaller so it would read all in a column*/
 @media screen and (max-width: 768px) {
-    .header {
-        width: 80%;
-    }
-    h2 {
-      display: none;
-    }
+  .header {
+    width: 80%;
+  }
+  h2 {
+    display: none;
+  }
   .navbar {
     justify-content: center;
-    width:80%;
+    width: 80%;
     overflow: clip;
     place-items: center;
     resize: both;
@@ -235,7 +235,7 @@ h3 {
     text-indent: 6rem;
     width: 35rem;
   }
-  
+
   .about-2 {
     grid-area: main2;
     margin: 2rem 0 0 2.5rem;
@@ -266,15 +266,13 @@ h3 {
     width: 17rem;
     margin: -4rem 0 4rem 8.2rem;
   }
-.contact {
-  display: block;
-}
-.contact-header {
-  margin: 0;
-  padding: 0;
-  border-right: 0px transparent;
-  border-bottom: 10px solid var(--hover)
-}
-
-  
+  .contact {
+    display: block;
+  }
+  .contact-header {
+    margin: 0;
+    padding: 0;
+    border-right: 0px transparent;
+    border-bottom: 10px solid var(--hover);
+  }
 }
